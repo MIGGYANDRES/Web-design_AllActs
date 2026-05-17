@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        /* LAYOUT CONTAINER */
+        .container {
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 200px;
+            background-color: #222;
+            color: white;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        /* MAIN CONTENT */
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* CARDS */
+        .card {
+            background-color: #ddd;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        Dashboard Header
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            Sidebar Menu
+        </div>
+
+        <!-- CONTENT -->
+        <div class="main">
+            <div class="grid">
+                <div class="card">Item 1</div>
+                <div class="card">Item 2</div>
+                <div class="card">Item 3</div>
+                <div class="card">Item 4</div>
+                <div class="card">Item 5</div>
+                <div class="card">Item 6</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
